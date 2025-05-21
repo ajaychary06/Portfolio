@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ajaychary Kandukuri | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+  <!-- SCROLL TO TOP BUTTON -->
+  <button onclick="scrollToTop()" id="topBtn" title="Go to top">⬆</button>
+
+  <!-- DARK MODE TOGGLE -->
+  <div class="theme-toggle">
+    <label>
+      <input type="checkbox" id="toggleDark" />
+      <span>🌙 Dark Mode</span>
+    </label>
+  </div>
+  
+
+  <!-- NAVIGATION BAR -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Ajaychary</a>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <div class="hero-text">
+      <h1>Ajaychary Kandukuri</h1>
+      <h2>Data Enthusiast | Aspiring Analyst & Engineer</h2>
+      <p>
+        Hi, I'm <strong>Ajaychary</strong> — a Data Science graduate with hands-on experience in machine learning, data visualization, and full-stack development. 
+        My passion lies in transforming complex data into actionable insights. I've led projects involving brain tumor detection using deep learning, 
+        developed interactive dashboards using D3.js, and built full-stack apps that solve real-world problems. I'm driven by curiosity, analytical thinking, and a strong desire to build solutions that make data meaningful and useful.
+      </p>
+      <div class="buttons">
+        <a href="Ajay Resume.pdf" download class="btn">Download Resume</a>
+        <a href="https://github.com/ajaychary06" class="btn-outline" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/ajaychary-kandukuri-053a5a25a/" class="btn-outline" target="_blank">LinkedIn</a>
+        <a href="mailto:ajaycharykandukuri06@gmail.com" class="btn-outline">Email</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="profile.jpeg" alt="Ajaychary's Profile Image" />
+    </div>
+  </header>
+
+  <!-- ABOUT SECTION -->
+  <section class="about">
+    <h3>About Me</h3>
+    <p>
+      I’m Ajaychary Kandukuri, a recent Data Science graduate from Kent State University with a strong background in machine learning, statistics, data visualization, and cloud technologies.
+      My work blends technical depth with a passion for problem-solving — from developing deep learning models for medical diagnostics to building interactive dashboards that bring data stories to life.
+    </p>
+    <p>
+      I’ve applied my skills across a wide range of tools and domains: using D3.js and JavaScript to build interactive visualizations, leveraging TensorFlow and Keras for brain tumor classification,
+      and applying regression and ensemble methods to forecast retail sales trends in R. My approach combines curiosity, structure, and a clear focus on building things that are not just smart — but usable.
+    </p>
+    <p>
+      Beyond technical work, I’m deeply interested in designing solutions that are interpretable and user-focused.
+      I enjoy collaborating in team environments and communicating insights that drive impact. I'm currently seeking opportunities where I can continue learning, contribute meaningfully,
+      and grow into a well-rounded data professional.
+    </p>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section class="skills">
+    <h3>Skills</h3>
+    <div class="skills-row">
+      <div class="skill-column">
+        <h4>Languages</h4>
+        <ul>
+          <li>Python</li>
+          <li>SQL</li>
+          <li>R</li>
+          <li>JavaScript</li>
+          <li>HTML/CSS</li>
+          <li>Shell</li>
+        </ul>
+      </div>
+      <div class="skill-column">
+        <h4>Tools</h4>
+        <ul>
+          <li>Power BI</li>
+          <li>Tableau</li>
+          <li>Git</li>
+          <li>Jupyter</li>
+          <li>Spark</li>
+          <li>Airflow</li>
+          <li>AWS / GCP</li>
+        </ul>
+      </div>
+      <div class="skill-column">
+        <h4>Core Areas</h4>
+        <ul>
+          <li>Data Cleaning</li>
+          <li>EDA</li>
+          <li>Visualization</li>
+          <li>Machine Learning</li>
+          <li>Data Engineering</li>
+          <li>D3.js</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME SECTION -->
+  <section id="resume" class="resume-section">
+    <h3>Resume</h3>
+    <p>
+      I hold a Master's in Data Science from Kent State University. I’ve led diverse projects — from brain tumor classification using deep learning to interactive dashboards with D3.js.
+      My technical skills span data pipelines, predictive modeling, and interactive front-ends.
+    </p>
+    <p>You can download my resume below:</p>
+    <a href="Ajay Resume.pdf" download class="btn">Download Resume</a>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="contact">
+    <h3>Let's Connect</h3>
+    <p>If you'd like to collaborate or discuss data — feel free to reach out.</p>
+    <p>Email: <a href="mailto:ajaycharykandukuri06@gmail.com">ajaycharykandukuri06@gmail.com</a></p>
+    <div class="contact-socials">
+      <a href="https://github.com/ajaychary06" target="_blank">GitHub</a> |
+      <a href="https://www.linkedin.com/in/ajaychary-kandukuri-053a5a25a/" target="_blank">LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2025 Ajaychary Kandukuri. Built with 💙 and curiosity.</p>
+  </footer>
+
+</body>
+</html>
