@@ -125,5 +125,22 @@
     <p>&copy; 2025 Ajaychary Kandukuri. Built with 💙 and curiosity.</p>
   </footer>
 
+  <!-- JavaScript for Scroll & Menu Toggle -->
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navLinks");
+      nav.classList.toggle("active");
+    }
+
+    window.onscroll = function () {
+      const topBtn = document.getElementById("topBtn");
+      topBtn.style.display = window.scrollY > 200 ? "block" : "none";
+    };
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  </script>
+
 </body>
 </html>
