@@ -5,20 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ajaychary Kandukuri | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   <script defer src="script.js"></script>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Ajaychary Kandukuri - Data Enthusiast | Data Analyst | Data Engineer | Portfolio showcasing projects and experience.">
+  <meta name="keywords" content="Ajaychary, Data Science, Data Analyst, Portfolio, Projects, Machine Learning, SQL, Python, Resume">
+  <meta name="author" content="Ajaychary Kandukuri">
 </head>
 <body>
 
-  <!-- SCROLL TO TOP BUTTON -->
   <button onclick="scrollToTop()" id="topBtn" title="Go to top">⬆</button>
 
-  <!-- NAVIGATION BAR -->
+  <!-- NAVIGATION -->
   <nav class="navbar">
     <div class="nav-container">
       <a href="index.html" class="logo">Ajaychary</a>
       <div class="menu-toggle" onclick="toggleMenu()">☰</div>
       <ul class="nav-links" id="navLinks">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="#hero">Home</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#resume">Resume</a></li>
@@ -27,14 +32,14 @@
     </div>
   </nav>
 
-  <!-- HERO SECTION -->
-  <header class="hero">
-    <div class="hero-text">
+  <!-- HERO -->
+  <header class="hero" id="hero">
+    <div class="hero-text" data-aos="fade-right">
       <h1>Ajaychary Kandukuri</h1>
       <h2>Data Enthusiast | Aspiring Analyst & Engineer</h2>
       <p>
-        Hi, I'm <strong>Ajaychary</strong> — a Data Science graduate with hands-on experience in machine learning, data visualization, and full-stack development.
-        My passion lies in transforming complex data into actionable insights. I've led projects involving brain tumor detection using deep learning,
+        Hi, I'm <strong>Ajaychary</strong> — a Data Science graduate with hands-on experience in machine learning, data visualization, and full-stack development. 
+        My passion lies in transforming complex data into actionable insights. I've led projects involving brain tumor detection using deep learning, 
         developed interactive dashboards using D3.js, and built full-stack apps that solve real-world problems. I'm driven by curiosity, analytical thinking, and a strong desire to build solutions that make data meaningful and useful.
       </p>
       <div class="buttons">
@@ -44,13 +49,13 @@
         <a href="mailto:ajaycharykandukuri06@gmail.com" class="btn-outline">Email</a>
       </div>
     </div>
-    <div class="hero-img">
+    <div class="hero-img" data-aos="fade-left">
       <img src="ajay picsa.jpg" alt="Ajaychary's Profile Image" />
     </div>
   </header>
 
-  <!-- ABOUT SECTION -->
-  <section class="about">
+  <!-- ABOUT -->
+  <section class="about" data-aos="fade-up">
     <h3>About Me</h3>
     <p>
       I’m <strong>Ajaychary Kandukuri</strong>, a passionate Data Science graduate from Kent State University, driven by the pursuit of actionable insights and real-world impact. With a strong foundation in machine learning, statistics, data visualization, and cloud computing, I thrive at the intersection of data and decision-making.
@@ -66,8 +71,8 @@
     </p>
   </section>
 
-  <!-- SKILLS SECTION -->
-  <section class="skills" id="skills">
+  <!-- SKILLS -->
+  <section class="skills" id="skills" data-aos="fade-up">
     <h3>Skills</h3>
     <div class="skills-row">
 
@@ -115,8 +120,8 @@
     </div>
   </section>
 
-  <!-- EXPERIENCE SECTION -->
-  <section class="experience" id="experience">
+  <!-- EXPERIENCE -->
+  <section class="experience" id="experience" data-aos="fade-up">
     <h3>Experience</h3>
     <div class="job-entry">
       <h4>Website Developer – Infinity Connects Media</h4>
@@ -130,8 +135,8 @@
     </div>
   </section>
 
-  <!-- RESUME SECTION -->
-  <section id="resume" class="resume-section">
+  <!-- RESUME -->
+  <section id="resume" class="resume-section" data-aos="fade-up">
     <h3>Resume</h3>
     <p>
       I hold a Master's in Data Science from Kent State University. I’ve led diverse projects — from brain tumor classification using deep learning to interactive dashboards with D3.js.
@@ -141,8 +146,8 @@
     <a href="Ajay Resume.pdf" download class="btn">Download Resume</a>
   </section>
 
-  <!-- CONTACT SECTION -->
-  <section id="contact" class="contact">
+  <!-- CONTACT -->
+  <section id="contact" class="contact" data-aos="fade-up">
     <h3>Let's Connect</h3>
     <p>If you'd like to collaborate or discuss data — feel free to reach out.</p>
     <p>Email: <a href="mailto:ajaycharykandukuri06@gmail.com">ajaycharykandukuri06@gmail.com</a></p>
@@ -152,7 +157,6 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <p>&copy; 2025 Ajaychary Kandukuri. Built with 💙 and curiosity.</p>
   </footer>
@@ -166,22 +170,10 @@
     gtag('config', 'G-62E37YFC2W');
   </script>
 
-  <!-- Mobile Menu Toggle Script -->
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>
-    function toggleMenu() {
-      const nav = document.getElementById("navLinks");
-      nav.classList.toggle("active");
-    }
-
-    // Optional: Scroll to top logic
-    window.onscroll = function () {
-      const topBtn = document.getElementById("topBtn");
-      topBtn.style.display = window.scrollY > 200 ? "block" : "none";
-    };
-
-    function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
+    AOS.init({ duration: 1000 });
   </script>
 
 </body>
