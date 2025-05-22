@@ -5,7 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects | Ajaychary Kandukuri</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   <script defer src="script.js"></script>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Explore data science and analytics projects by Ajaychary Kandukuri. Includes dashboards, deep learning, and NLP solutions.">
+  <meta name="keywords" content="Data Science, Projects, Dashboard, Machine Learning, NLP, Deep Learning, D3.js, Brain Tumor Detection">
+  <meta name="author" content="Ajaychary Kandukuri">
 </head>
 <body>
 
@@ -19,22 +25,22 @@
       <div class="menu-toggle" onclick="toggleMenu()">☰</div>
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- HEADER -->
-  <header class="project-header">
+  <!-- PROJECTS HEADER -->
+  <header class="project-header" data-aos="fade-down">
     <h1>My Projects</h1>
     <p>A showcase of practical projects demonstrating my skills in data science, analytics, and visualization.</p>
   </header>
 
-  <!-- PROJECTS SECTION -->
+  <!-- PROJECTS LIST -->
   <section class="projects-vertical">
 
     <!-- Project 1: Car Dashboard -->
-    <div class="project-block horizontal-layout">
+    <div class="project-block horizontal-layout" data-aos="fade-up">
       <div class="project-content">
         <h2>Interactive Car Data Dashboard</h2>
         <p>Developed an interactive dashboard using D3.js to visualize car performance data with coordinated charts and brushing features.</p>
@@ -55,7 +61,7 @@
     </div>
 
     <!-- Project 2: Brain Tumor -->
-    <div class="project-block horizontal-layout">
+    <div class="project-block horizontal-layout" data-aos="fade-up">
       <div class="project-content">
         <h2>Brain Tumor Diagnosis with Deep Learning</h2>
         <p>Built a CNN-based pipeline to classify and localize brain tumors in MRI scans. Achieved 99.65% accuracy with VGG19.</p>
@@ -75,7 +81,7 @@
     </div>
 
     <!-- Project 3: Fake News -->
-    <div class="project-block">
+    <div class="project-block" data-aos="fade-up">
       <div class="project-content">
         <h2>Fake News Detection Using NLP</h2>
         <p>
@@ -97,7 +103,7 @@
     </div>
 
     <!-- Project 4: Car Seat Sales -->
-    <div class="project-block">
+    <div class="project-block" data-aos="fade-up">
       <div class="project-content">
         <h2>Car Seat Sales Prediction</h2>
         <p>
@@ -125,21 +131,10 @@
     <p>&copy; 2025 Ajaychary Kandukuri. Built with 💙 and curiosity.</p>
   </footer>
 
-  <!-- JavaScript for Scroll & Menu Toggle -->
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>
-    function toggleMenu() {
-      const nav = document.getElementById("navLinks");
-      nav.classList.toggle("active");
-    }
-
-    window.onscroll = function () {
-      const topBtn = document.getElementById("topBtn");
-      topBtn.style.display = window.scrollY > 200 ? "block" : "none";
-    };
-
-    function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
+    AOS.init({ duration: 1000 });
   </script>
 
 </body>
