@@ -1,13 +1,14 @@
-/* GENERAL RESET */
+/* General Reset */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   background-color: #f0f4f8;
   color: #1a1a1a;
   scroll-behavior: smooth;
+  line-height: 1.6;
 }
 
-/* NAVIGATION BAR */
+/* Navigation Bar */
 .navbar {
   background-color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04);
@@ -23,7 +24,6 @@ body {
   align-items: center;
   max-width: 1100px;
   margin: auto;
-  position: relative;
 }
 
 .logo {
@@ -35,7 +35,7 @@ body {
 
 .menu-toggle {
   display: none;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   cursor: pointer;
   color: #1a1a1a;
 }
@@ -53,11 +53,13 @@ body {
   transition: color 0.2s;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a.active-link {
   color: #1f4aff;
+  border-bottom: 2px solid #1f4aff;
 }
 
-/* HERO SECTION */
+/* Hero Section */
 .hero {
   display: flex;
   flex-wrap: wrap;
@@ -78,11 +80,12 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   color: #102a43;
+  margin-bottom: 0.5rem;
 }
 
-/* BUTTONS */
+/* Buttons */
 .buttons {
   margin-top: 1rem;
 }
@@ -116,10 +119,10 @@ a.btn-outline:hover {
   background-color: #e6f0ff;
 }
 
-/* ABOUT SECTION */
+/* About Section */
 .about {
   text-align: center;
-  padding: 2rem;
+  padding: 3rem 1rem;
   background-color: #ffffff;
 }
 
@@ -129,7 +132,7 @@ a.btn-outline:hover {
   color: #334e68;
 }
 
-/* SKILLS SECTION */
+/* Skills Section */
 .skills {
   background-color: #e3f2fd;
   padding: 3rem 1rem;
@@ -166,9 +169,10 @@ a.btn-outline:hover {
   padding: 0;
   color: #334e68;
   font-size: 0.95rem;
+  line-height: 1.6;
 }
 
-/* RESUME SECTION */
+/* Resume Section */
 .resume-section {
   background-color: #ffffff;
   padding: 3rem 1rem;
@@ -180,10 +184,9 @@ a.btn-outline:hover {
   margin: 0 auto 1.5rem;
   font-size: 0.95rem;
   color: #334e68;
-  line-height: 1.6;
 }
 
-/* CONTACT SECTION */
+/* Contact Section */
 .contact {
   background-color: #fdfdfd;
   text-align: center;
@@ -204,7 +207,54 @@ a.btn-outline:hover {
   text-decoration: underline;
 }
 
-/* PROJECTS PAGE */
+/* Experience Section */
+.experience {
+  background-color: #ffffff;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.experience h3 {
+  color: #102a43;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.job-entry {
+  background-color: #f9fbfc;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  max-width: 800px;
+  width: 100%;
+  padding: 2rem;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.job-entry h4 {
+  color: #1f4aff;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.job-entry p {
+  color: #334e68;
+  font-style: italic;
+  margin-bottom: 0.75rem;
+}
+
+.job-entry ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+  color: #334e68;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Projects Page */
 .project-header {
   text-align: center;
   padding: 3rem 1rem 1.5rem;
@@ -249,7 +299,6 @@ a.btn-outline:hover {
 
 .horizontal-layout .project-content {
   flex: 1 1 55%;
-  padding: 0;
 }
 
 .horizontal-layout .project-image {
@@ -319,53 +368,7 @@ a.btn-outline:hover {
   background-color: #eaf0ff;
 }
 
-/* EXPERIENCE SECTION */
-.experience {
-  background-color: #ffffff;
-  padding: 3rem 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.experience h3 {
-  color: #102a43;
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-}
-
-.job-entry {
-  background-color: #f9fbfc;
-  border-radius: 12px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
-  max-width: 800px;
-  width: 100%;
-  padding: 2rem;
-  margin-top: 1rem;
-  text-align: left;
-}
-
-.job-entry h4 {
-  color: #1f4aff;
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-
-.job-entry p {
-  color: #334e68;
-  font-style: italic;
-  margin-bottom: 0.75rem;
-}
-
-.job-entry ul {
-  list-style: disc;
-  padding-left: 1.25rem;
-  color: #334e68;
-  font-size: 0.95rem;
-}
-
-/* FOOTER */
+/* Footer */
 .footer {
   background-color: #e0e7ff;
   text-align: center;
@@ -376,7 +379,7 @@ a.btn-outline:hover {
   border-top: 1px solid #dbeafe;
 }
 
-/* SCROLL TO TOP BUTTON */
+/* Scroll to Top Button */
 #topBtn {
   display: none;
   position: fixed;
@@ -398,7 +401,7 @@ a.btn-outline:hover {
   background-color: #153ecf;
 }
 
-/* RESPONSIVE DESIGN */
+/* Responsive Design */
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
@@ -422,7 +425,6 @@ a.btn-outline:hover {
     right: 20px;
     padding: 1rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    z-index: 10;
   }
 
   .nav-links.active {
@@ -432,4 +434,21 @@ a.btn-outline:hover {
   .horizontal-layout {
     flex-direction: column;
   }
+}
+
+
+.js-enabled .hero-text,
+.js-enabled .hero-img img,
+.js-enabled .about p,
+.js-enabled .skill-column,
+.js-enabled .job-entry,
+.js-enabled .project-block {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.appear {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition: all 0.6s ease-out;
 }
