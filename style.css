@@ -23,6 +23,7 @@ body {
   align-items: center;
   max-width: 1100px;
   margin: auto;
+  position: relative;
 }
 
 .logo {
@@ -34,7 +35,7 @@ body {
 
 .menu-toggle {
   display: none;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   cursor: pointer;
   color: #1a1a1a;
 }
@@ -318,6 +319,52 @@ a.btn-outline:hover {
   background-color: #eaf0ff;
 }
 
+/* EXPERIENCE SECTION */
+.experience {
+  background-color: #ffffff;
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.experience h3 {
+  color: #102a43;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.job-entry {
+  background-color: #f9fbfc;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  max-width: 800px;
+  width: 100%;
+  padding: 2rem;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.job-entry h4 {
+  color: #1f4aff;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.job-entry p {
+  color: #334e68;
+  font-style: italic;
+  margin-bottom: 0.75rem;
+}
+
+.job-entry ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+  color: #334e68;
+  font-size: 0.95rem;
+}
+
 /* FOOTER */
 .footer {
   background-color: #e0e7ff;
@@ -362,6 +409,10 @@ a.btn-outline:hover {
     margin-top: 1.5rem;
   }
 
+  .menu-toggle {
+    display: block;
+  }
+
   .nav-links {
     display: none;
     flex-direction: column;
@@ -371,63 +422,14 @@ a.btn-outline:hover {
     right: 20px;
     padding: 1rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
   }
 
   .nav-links.active {
     display: flex;
   }
 
-  .menu-toggle {
-    display: block;
-  }
-
   .horizontal-layout {
     flex-direction: column;
   }
-}
-
-
-.experience {
-  background-color: #ffffff;
-  padding: 3rem 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.experience h3 {
-  color: #102a43;
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-}
-
-.job-entry {
-  background-color: #f9fbfc;
-  border-radius: 12px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
-  max-width: 800px;
-  width: 100%;
-  padding: 2rem;
-  margin-top: 1rem;
-  text-align: left;
-}
-
-.job-entry h4 {
-  color: #1f4aff;
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-}
-
-.job-entry p {
-  color: #334e68;
-  font-style: italic;
-  margin-bottom: 0.75rem;
-}
-
-.job-entry ul {
-  list-style: disc;
-  padding-left: 1.25rem;
-  color: #334e68;
-  font-size: 0.95rem;
 }
