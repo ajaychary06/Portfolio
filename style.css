@@ -385,3 +385,41 @@ a.btn-outline:hover {
     flex-direction: column;
   }
 }
+
+
+.experience {
+  background-color: #ffffff;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.experience h3 {
+  color: #102a43;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.job-entry {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.job-entry h4 {
+  color: #1f4aff;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.job-entry p {
+  color: #334e68;
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.job-entry ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+  color: #334e68;
+  font-size: 0.95rem;
+}
