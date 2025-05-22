@@ -390,6 +390,9 @@ a.btn-outline:hover {
 .experience {
   background-color: #ffffff;
   padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
@@ -400,8 +403,13 @@ a.btn-outline:hover {
 }
 
 .job-entry {
+  background-color: #f9fbfc;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
   max-width: 800px;
-  margin: 0 auto;
+  width: 100%;
+  padding: 2rem;
+  margin-top: 1rem;
   text-align: left;
 }
 
@@ -414,7 +422,7 @@ a.btn-outline:hover {
 .job-entry p {
   color: #334e68;
   font-style: italic;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 
 .job-entry ul {
