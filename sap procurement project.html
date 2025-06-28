@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SAP Procurement Local Pipeline</title>
+  <style>
+    :root {
+      --bg: #f7fbfd;
+      --card: #ffffff;
+      --primary: #5cbcd9;
+      --accent: #2b6777;
+      --text: #1f2d3d;
+      --soft-text: #4a4a4a;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', 'Segoe UI', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      background-color: var(--card);
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    h1 {
+      font-size: 30px;
+      color: var(--accent);
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 12px;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-size: 22px;
+      color: var(--primary);
+      margin-top: 35px;
+      margin-bottom: 12px;
+    }
+
+    p, li {
+      font-size: 16px;
+      color: var(--soft-text);
+      margin-bottom: 12px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 25px;
+        margin: 20px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📊 ProcureCast 360: Predictive Spend Forecasting & Supplier Risk Analytics</h1>
+
+    <div class="section">
+      <h2>🔍 Overview</h2>
+      <p>
+        This project simulates an end-to-end procurement analytics pipeline inspired by SAP ERP systems.
+        It ingests structured procurement data, forecasts spend, and assesses supplier risk using modern data engineering
+        and machine learning workflows.
+      </p>
+      <p>
+        The solution demonstrates how enterprises can leverage advanced analytics to optimize procurement decisions,
+        improve supplier relationships, and drive cost savings.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>📂 Data Sources and Context</h2>
+      <p>
+        The pipeline processes synthetic SAP-style procurement tables, closely resembling real-world data such as:
+      </p>
+      <ul>
+        <li><strong>Purchase Orders (PO):</strong> Line items, quantities, net prices, vendors</li>
+        <li><strong>Invoices:</strong> Invoice amounts, dates, and payment terms</li>
+        <li><strong>Vendor Master Data:</strong> Supplier profiles, risk scores, and historical performance</li>
+      </ul>
+      <p>
+        This structured data mimics SAP MM module exports (e.g., EKPO, EKKO, LFA1), enabling realistic procurement analytics workflows.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>🧭 Approach</h2>
+      <p>
+        The pipeline follows a modular design:
+      </p>
+      <ul>
+        <li>Data ingestion and preprocessing using Python and pandas</li>
+        <li>Spend forecasting with Facebook Prophet time series models</li>
+        <li>Supplier risk scoring using Isolation Forest anomaly detection</li>
+        <li>ETL orchestration with Apache Airflow</li>
+        <li>Storage in Parquet files and relational databases</li>
+        <li>Visualization in Power BI dashboards</li>
+      </ul>
+      <p>
+        Each component is containerized via Docker for reproducibility.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>⚙️ Methodologies</h2>
+      <ul>
+        <li><strong>Time Series Forecasting:</strong> Prophet models to predict future spend by supplier and category</li>
+        <li><strong>Anomaly Detection:</strong> Isolation Forest to flag potential high-risk suppliers based on transaction patterns</li>
+        <li><strong>ETL Pipelines:</strong> Airflow DAGs automate ingestion, transformation, and modeling tasks</li>
+        <li><strong>Data Aggregation:</strong> Grouped metrics by time period, supplier, and material type</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>🧰 Technologies</h2>
+      <ul>
+        <li><strong>Languages:</strong> Python, SQL</li>
+        <li><strong>Libraries:</strong> pandas, scikit-learn, Prophet</li>
+        <li><strong>Platforms:</strong> Apache Airflow, Docker, Power BI</li>
+        <li><strong>Storage:</strong> Parquet, PostgreSQL</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>📈 Results and Impact</h2>
+      <p>
+        The pipeline successfully processed large simulated procurement datasets, generating accurate spend forecasts
+        and identifying anomalous supplier behaviors. The Power BI dashboards provided stakeholders with actionable insights
+        into spending trends and supplier performance.
+      </p>
+      <p>
+        This approach demonstrates how integrating forecasting and anomaly detection can improve procurement strategy and reduce supply chain risks.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>🔮 Future Enhancements</h2>
+      <ul>
+        <li>Integrate real-time streaming ingestion with Apache Kafka</li>
+        <li>Incorporate additional risk scoring models using ensemble methods</li>
+        <li>Develop automated email alerts for anomalous spend patterns</li>
+        <li>Extend dashboards with drill-through supplier profiles</li>
+      </ul>
+    </div>
+  </div>
+  
+  <footer class="footer" style="background-color: #eef5f9; color: #4a4a4a; text-align: center; padding: 20px; margin-top: 40px; border-radius: 0 0 16px 16px; box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);">
+    <p style="margin: 0;">&copy; 2025 Ajaychary Kandukuri. Built with 💙 and curiosity.</p>
+  </footer>
+
+</body>
+</html>
